@@ -22,10 +22,11 @@
     <h1>I AM HIROKDEEP SAHA</h1>
     <h3>pursuing BTECH in CSE from<br> Techno Bengal Institute of Technology</h3>
     <div class="social-icons">
-      <a href="https://x.com/hirokdeep" style="color:white">𝕏</a>
-      <a href="https://www.linkedin.com/in/hirokdeep-saha-96a342293/" style="color:white">[in]</a>
-      <a href="https://www.hackerrank.com/profile/saha_hirokdeep" style="color:white">HackerRank</a>
-    </div>
+  <a href="https://x.com/hirokdeep" class="social-btn" target="_blank">𝕏</a>
+  <a href="https://www.linkedin.com/in/hirokdeep-saha-96a342293/" class="social-btn" target="_blank">LinkedIn</a>
+  <a href="https://github.com/HirokdeepSaha" class="social-btn" target="_blank">GitHub</a>
+  <a href="https://www.hackerrank.com/profile/saha_hirokdeep" class="social-btn" target="_blank">HackerRank</a>
+</div>
   </div>
   <div class="hero-image">
     <img src="profile.jpg" alt="Hirokdeep" />
@@ -51,13 +52,14 @@
     <div class="skills">
   <h2>Languages Known</h2>
   <ul class="language-list">
-    <li>C</li>
-    <li>C++</li>
-    <li>Java</li>
-    <li>Python</li>
-    <li>JavaScript</li>
-    <li>HTML & CSS</li>
-  </ul>
+  <li><a href="c.html" class="skill-btn">C</a></li>
+  <li><a href="cpp.html" class="skill-btn">C++</a></li>
+  <li><a href="java.html" class="skill-btn">Java</a></li>
+  <li><a href="python.html" class="skill-btn">Python</a></li>
+  <li><a href="js.html" class="skill-btn">JavaScript</a></li>
+  <li><a href="htmlcss.html" class="skill-btn">HTML & CSS</a></li>
+</ul>
+
 </div>
 
 
@@ -88,7 +90,7 @@
 <!-- Contact Me Section -->
 <section class="contact-info fade-in" id="contact-info">
   <div class="container">
-    <h2>Contact Me</h2>
+    <h2>Contact Details</h2>
     <div class="contact-details">
       <p><strong>📞 Phone:</strong> <a href="tel:+919836964044">+91 98369 64044</a></p>
       <p><strong>✉️ Email:</strong> <a href="mailto:saha.hirokdeep@gmail.com">saha.hirokdeep@gmail.com</a></p>
@@ -131,13 +133,39 @@ h2 {
   color: purple;
   font-weight: 600;
 }
+/* Social Media Buttons */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  padding: 10px 18px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.social-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 18px rgba(128, 0, 128, 0.9);
+}
+
 /* ---------------- HERO SECTION ---------------- */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 60px 10%;
-  min-height: 75vh; /* full screen height */
+  min-height: 50vh; /* full screen height */
 background: linear-gradient(120deg, #6a0dad, #b84dff);
 
   color: white;
@@ -299,6 +327,7 @@ font-color:white;
   margin-top: 10px;
  box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
 
+
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -307,6 +336,28 @@ font-color:white;
   box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
   transform: scale(1.02);
 }
+
+/* Skill buttons */
+.skill-btn {
+display:block
+    background: #1a1a1a;
+  color: grey;
+  text-decoration: none;      /* removes hyperlink underline */
+  font-weight: 500;
+  text-align: center;
+   transition: 0.3s ease;
+  
+}
+
+/* Hover effect (button look) */
+.skill-btn:hover {
+  background: purple;
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(128, 0, 128, 1.0);
+  border-color: purple;
+}
+
 
 /* ---------------- INDIVIDUAL SKILL HOVER EFFECT ---------------- */
 .language-list li {
