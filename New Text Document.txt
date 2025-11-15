@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jo Breed - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">Breed</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="greeting">Hey There!</p>
+      <h1>I AM JO BREED</h1>
+      <h3>Creative Art Director & Designer</h3>
+      <div class="social-icons">
+        <!-- Replace with your social links -->
+        <a href="#">🐦</a>
+        <a href="#">💬</a>
+        <a href="#">📸</a>
+        <a href="#">🖼️</a>
+        <a href="#">💎</a>
+      </div>
+      <button class="cta">See My Work</button>
+    </div>
+    <div class="hero-image">
+      <img src="your-image.png" alt="Jo Breed" />
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><strong>15k+</strong><br/>Happy Customers</div>
+    <div class="stat"><strong>12k+</strong><br/>Tickets Solved</div>
+    <div class="stat"><strong>9/10</strong><br/>Average Rating</div>
+  </section>
+</body>
+</html>

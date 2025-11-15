@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hirokdeep Saha - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body style="background-color:black;">
+
+	<script src="script.js"></script>
+
+<!<header>
+   <! <div class="logo"WELCOME TO MY PORTFOLIO</div>
+    <!<nav></nav>
+<!</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="greeting">Hey There!</p>
+    <h1>I AM HIROKDEEP SAHA</h1>
+    <h3>pursuing BTECH in CSE from<br> Techno Bengal Institute of Technology</h3>
+    <div class="social-icons">
+      <a href="https://x.com/hirokdeep" style="color:white">𝕏</a>
+      <a href="https://www.linkedin.com/in/hirokdeep-saha-96a342293/" style="color:white">[in]</a>
+      <a href="https://www.hackerrank.com/profile/saha_hirokdeep" style="color:white">HackerRank</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="profile.jpg" alt="Hirokdeep" />
+  </div>
+</section>
+
+<!-- About + Languages Side by Side -->
+<section class="about-skills fade-in" id="about-skills">
+  <div class="container flex-container">
+    
+    <!-- About Section -->
+    <div class="about">
+      <h2 styles="color:purple">About Me</h2>
+      <p>
+        I'm currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering. 
+        Passionate about solving real-world problems through code, I have a strong foundation in programming, 
+        data structures, and software development. I enjoy building responsive web applications and exploring 
+        technologies like AI, machine learning, and cloud computing. Always curious and eager to learn, 
+        I'm on a journey to become a full-stack developer and contribute to innovative tech solutions.
+      </p>
+    </div>
+
+    <div class="skills">
+  <h2>Languages Known</h2>
+  <ul class="language-list">
+    <li>C</li>
+    <li>C++</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>JavaScript</li>
+    <li>HTML & CSS</li>
+  </ul>
+</div>
+
+
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects fade-in" id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>AI Health Chatbot</h3>
+        <p>A multilingual chatbot using Node.js and Dialogflow to provide basic health awareness in rural areas.</p>
+      </div>
+      <div class="project">
+        <h3>Student Management System</h3>
+        <p>A Java-based system to manage student records, attendance, and grades efficiently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section class="contact-info fade-in" id="contact-info">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="contact-details">
+      <p><strong>📞 Phone:</strong> <a href="tel:+919836964044">+91 98369 64044</a></p>
+      <p><strong>✉️ Email:</strong> <a href="mailto:saha.hirokdeep@gmail.com">saha.hirokdeep@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Send Message -->
+<section class="contact fade-in" id="contact">
+  <div class="container">
+    <h2>Send Message</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </div>
+</section>
+
+
+</body>
+
+<style>
+/* General container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+	background-color:black;
+}
+
+/* Section headings */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: purple;
+  font-weight: 600;
+}
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  min-height: 75vh; /* full screen height */
+background: linear-gradient(120deg, #6a0dad, #b84dff);
+
+  color: white;
+  flex-wrap: wrap;
+ 
+}
+
+.hero-text {
+  flex: 1 1 45%;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin: 10px 0;
+}
+
+.hero-text h3 {
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* Make profile picture take half the screen */
+.hero-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 50vw;   /* takes half the window width */
+  height: 50vh;  /* takes half the window height */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease;
+}
+
+/* Hover zoom effect */
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 5%;
+  }
+  
+  .hero-image img {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+
+/* ---------------- PROJECTS SECTION ---------------- */
+.projects {
+  background: black;
+  padding: 60px 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project {
+  background: black;
+  padding: 20px;
+  border-radius: 12px;
+font-color:white;
+   box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);/* purple glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.project p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Hover effect */
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
+	 transform: scale(1.02);
+}
+
+/* ---------------- ABOUT SECTION ---------------- */
+.about {
+  flex: 1 1 55%;
+  text-align: left;
+  display: flex;
+  background: black;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+}
+
+.about p {
+  line-height: 1.8;
+  color: #555;
+  border: 1px solid black;  /* thin border */
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+	 box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for About text */
+.about p:hover {
+  box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);/* purple glow */
+  transform: scale(1.02);
+}
+
+/* ---------------- SKILLS SECTION ---------------- */
+.skills {
+  flex: 1 1 40%;
+  background: black;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.skills h2 {
+  margin-bottom: 3%;
+
+}
+
+/* Border only around the list area */
+.skills .language-list {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+ box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover glow for entire Skills section box */
+.skills .language-list:hover {
+  box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
+  transform: scale(1.02);
+}
+
+/* ---------------- INDIVIDUAL SKILL HOVER EFFECT ---------------- */
+.language-list li {
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: grey;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid black;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Glow + pop on hover for each skill */
+.language-list li:hover {
+  background: purple;
+  color: white;
+  transform: scale(1.08);
+ box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
+  border-color: purple;
+}
+
+/* ---------------- CONTACT INFO SECTION ---------------- */
+.contact-info {
+  background: black;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: purple;
+  margin-bottom: 25px;
+}
+
+.contact-details {
+  display: inline-block;
+  border: 1px solid rgba(128, 0, 128, 0.6);
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.6);
+  background: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-details:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.9);
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  color: white;
+  margin: 10px 0;
+}
+
+.contact-details a {
+  color: grey;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: purple;
+  text-shadow: 0 0 10px rgba(128, 0, 128, 0.8);
+}
+
+/* ---------------- Send message SECTION ---------------- */
+.contact {
+  background: black;
+  padding: 60px 20px;
+
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  color: purple;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
+
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+}
+.contact form {
+  border: 1px solid black;              /* thin subtle border */
+  border-radius: 10px;                 /* smooth edges */
+  padding: 20px;
+  background: transparent;   
+          /* keep the section background visible */
+box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Optional — purple glow when hovering over the form */
+.contact form:hover {
+  box-shadow: 0 0 15px rgba(128, 0, 128, 1.2);
+  transform: scale(1.01);
+}
+
+
+.contact-form button {
+  padding: 14px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: purple;
+  transform: scale(1.05);
+}
+
+.form-status {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: purple;
+}
+
+/* ---------------- FADE-IN EFFECT ---------------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+
+<script>
+// Fade-in on scroll
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll(".fade-in");
+
+  const appearOptions = { threshold: 0.2 };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});
+</script>
+</html>
