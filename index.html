@@ -10,6 +10,15 @@
 <body style="background-color:black;">
 
 	<script src="script.js"></script>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#about-skills" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact-info" class="nav-link">Contact</a>
+  </div>
+</nav>
+
 
 <!<header>
    <! <div class="logo"WELCOME TO MY PORTFOLIO</div>
@@ -49,7 +58,7 @@
       </p>
     </div>
 
-    <div class="skills">
+    <div class="skills" id="skills">
   <h2>Languages Known</h2>
   <ul class="language-list">
   <li><a href="c.html" class="skill-btn">C</a></li>
@@ -117,6 +126,54 @@
 </body>
 
 <style>
+
+/* ---------------- NAVBAR / TASKBAR ---------------- */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background: rgba(20, 0, 30, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 12px 0;
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.6);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  background: purple;
+  box-shadow: 0 0 12px rgba(128, 0, 128, 0.8);
+  transform: scale(1.07);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add top padding so content doesn't hide under navbar */
+body {
+  padding-top: 70px;
+}
+
 /* General container */
 .container {
   max-width: 1000px;
@@ -228,6 +285,7 @@ background: linear-gradient(120deg, #6a0dad, #b84dff);
 .projects {
   background: black;
   padding: 60px 20px;
+	margin-top:4%;
 }
 
 .project-list {
@@ -275,6 +333,7 @@ font-color:white;
 }
 
 .about h2 {
+margin-top:5%;
   margin-bottom: 15px;
 }
 
@@ -310,8 +369,8 @@ font-color:white;
 }
 
 .skills h2 {
-  margin-bottom: 3%;
-
+  margin-bottom:3%;
+	margin-top:10%;
 }
 
 /* Border only around the list area */
@@ -391,6 +450,7 @@ display:block
 .contact-info h2 {
   color: purple;
   margin-bottom: 25px;
+	margin-top:7%;
 }
 
 .contact-details {
