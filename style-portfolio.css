@@ -147,7 +147,6 @@ section{
   height:100%;
   object-fit:cover;
   border-radius:50%;
-  padding:10px; /* optional inner glow spacing */
 }
 
 @keyframes float{
