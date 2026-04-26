@@ -131,8 +131,8 @@ section{
 
 /* PHOTO */
 .photo{
-  width:330px;
-  height:330px;
+  width:430px;
+  height:430px;
   border-radius:50%;
   display:flex;
   align-items:center;
